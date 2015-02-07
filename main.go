@@ -8,8 +8,10 @@ import (
 )
 
 func start() {
-
-}
+	items := NewItems()
+	item := NewItem()
+	items = append(items, item)
+	showItems(items)
 
 func main() {
 	defer android.PanicHandler()
